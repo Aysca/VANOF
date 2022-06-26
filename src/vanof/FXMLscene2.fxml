@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vanof.FXMLscene2Controller">
+   <children>
+      <TableView fx:id="tvPosyandu" layoutX="55.0" layoutY="175.0" prefHeight="308.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="tcName" prefWidth="185.5999412536621" text="Nama" />
+          <TableColumn fx:id="tcNomor" prefWidth="132.8000030517578" text="Nomor" />
+            <TableColumn fx:id="tcAlamat" prefWidth="292.79998779296875" text="Alamat" />
+            <TableColumn fx:id="tcUsiaKandungan" prefWidth="139.199951171875" text="Usia Kandungan" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfName" layoutX="55.0" layoutY="74.0" promptText="Nama" />
+      <TextField fx:id="tfNomor" layoutX="56.0" layoutY="108.0" promptText="Nomor" />
+      <TextField fx:id="tfAlamat" layoutX="215.0" layoutY="74.0" promptText="Alamat" />
+      <TextField fx:id="tfUsia" layoutX="216.0" layoutY="108.0" promptText="Usia Kandungan" />
+      <Button layoutX="55.0" layoutY="140.0" mnemonicParsing="false" onAction="#Actionbutton" text="Tambah" />
+      <Button layoutX="55.0" layoutY="485.0" mnemonicParsing="false" text="Simpan" />
+      <Pagination layoutX="493.0" layoutY="112.0" prefHeight="44.0" prefWidth="304.0" style="-fx-background-color: #;" />
+      <ChoiceBox fx:id="tfBox" layoutX="690.0" layoutY="48.0" prefHeight="18.0" prefWidth="45.0" />
+      <Label layoutX="654.0" layoutY="51.0" prefHeight="18.0" prefWidth="36.0" text="Show" />
+      <Label layoutX="742.0" layoutY="52.0" prefHeight="17.0" prefWidth="45.0" text="entries" />
+   </children>
+</AnchorPane>

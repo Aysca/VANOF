@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vanof.FXMLDocumentController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="-11.0" layoutY="-1.0" prefHeight="626.0" prefWidth="1161.0">
+         <left>
+            <VBox prefHeight="626.0" prefWidth="226.0" style="-fx-background-color: #6798E1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Action" prefHeight="33.0" prefWidth="226.0" style="-fx-background-color: #6798E1;" text="Data Ibu Hamil" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../MedClickDEMODisplay_4/src/medclickdemodisplay/Images/Pasien.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Action2" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #6798E1;" text="Jadwal" textFill="#fffcfc">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../MedClickDEMODisplay_4/src/medclickdemodisplay/Images/Tindakan.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#Action3" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #6798E1;" text="Data Balita" textFill="#fffcfc">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../MedClickDEMODisplay_4/src/medclickdemodisplay/Images/Tindakan.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="vanof.FXMLDataBalitaController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="723.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TextField fx:id="tfnamaIbu" layoutX="103.0" layoutY="67.0" onAction="#handleButtonAction" />
+            <TextField fx:id="tfusiaBalita" layoutX="103.0" layoutY="169.0" onAction="#handleButtonAction" />
+            <Label layoutX="40.0" layoutY="71.0" prefHeight="17.0" prefWidth="45.0" text="Nama" />
+            <Label layoutX="40.0" layoutY="169.0" prefHeight="17.0" prefWidth="45.0" text="Usia" />
+            <Button layoutX="110.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleButtonAction" text="OK" />
+            <Button layoutX="195.0" layoutY="304.0" mnemonicParsing="false" text="Cancel" />
+            <Label layoutX="241.0" layoutY="5.0" prefHeight="65.0" prefWidth="309.0" text="Formulir Pengambilan Nomor Antrian Online">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNIK" layoutX="103.0" layoutY="217.0" />
+            <Label layoutX="40.0" layoutY="221.0" text="NIK" />
+            <RadioButton fx:id="rbibuHamil" layoutX="102.0" layoutY="97.0" mnemonicParsing="false" selected="true" text="Ibu Hamil">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Pilihan" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbibuBalita" layoutX="206.0" layoutY="97.0" mnemonicParsing="false" selected="true" text="Ibu Balita" toggleGroup="$Pilihan" />
+            <ChoiceBox fx:id="cbNIK" layoutX="103.0" layoutY="260.0" prefWidth="150.0" />
+            <TableView fx:id="tvIbuBalita" layoutX="319.0" layoutY="67.0" prefHeight="193.0" prefWidth="364.0">
+               <columns>
+                  <TableColumn fx:id="tcNamaIbu" prefWidth="110.0" text="Nama Ibu" />
+                  <TableColumn fx:id="tcNamaBalita" prefWidth="98.66665649414062" text="Nama Balita" />
+                  <TableColumn fx:id="tcUsiaBalita" minWidth="0.0" prefWidth="67.33331298828125" text="Usia Balita" />
+                  <TableColumn fx:id="tcNIK" prefWidth="79.3333740234375" text="NIK" />
+               </columns>
+            </TableView>
+            <TextField fx:id="tfnamaBalita" layoutX="103.0" layoutY="124.0" onAction="#handleButtonAction" />
+            <Label layoutX="28.0" layoutY="128.0" prefHeight="17.0" prefWidth="69.0" text="Nama Balita" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vanof.FXMLJadwalController">
+   <children>
+      <TableView fx:id="tvJadwal" layoutX="48.0" layoutY="90.0" prefHeight="308.0" prefWidth="758.0">
+         <columns>
+            <TableColumn fx:id="tcNo" prefWidth="47.999996185302734" text="No" />
+            <TableColumn fx:id="tcHari" prefWidth="271.99998474121094" text="Hari/Minggu ke -" />
+            <TableColumn fx:id="tcPosyandu" prefWidth="292.79998779296875" text="Posyandu" />
+            <TableColumn fx:id="tcAlamat" prefWidth="144.79996337890623" text="Alamat" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
