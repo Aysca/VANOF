@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cobalogin.FXMLDocumentController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="433.0" prefWidth="600.0">
+         <right>
+            <VBox prefHeight="433.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="IHC" textFill="#6798e1">
+                     <font>
+                        <Font name="Elephant" size="40.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="130.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Selamat Datang" textFill="#6798e1">
+                     <VBox.margin>
+                        <Insets left="110.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="242.0" promptText="Username">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField promptText="Password">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button mnemonicParsing="false" onAction="#loginButtonAction" style="-fx-background-color: #6798E1;" text="Masuk" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #6798E1;" text="Daftar" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <VBox prefHeight="433.0" prefWidth="263.0" style="-fx-background-color: #6798E1;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons8-health-100.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="75.0" top="140.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children></VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
