@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="cobalogin.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="cobalogin.loginDocumentController">
    <children>
       <BorderPane fx:id="mainPane" prefHeight="433.0" prefWidth="600.0">
          <right>

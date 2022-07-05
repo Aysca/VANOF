@@ -11,7 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.layout.BorderPane;
 
-public class FXMLDocumentController_1 implements Initializable {
+public class loginDocumentController implements Initializable {
     
     OpenScene bukaScene = new OpenScene();
     
