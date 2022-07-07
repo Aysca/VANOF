@@ -20,8 +20,8 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private BorderPane mainPane;
-    
-    @FXML 
+
+    @FXML
     private ImageView label;
 
     @FXML
@@ -39,6 +39,7 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("You clicked me!");
 
     }
+
     @FXML
     private void Action3(ActionEvent event) {
         Pane halaman = bukaScene.getPane("FXMLDataBalita");
@@ -47,10 +48,16 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
+    @FXML
+    private void Action4(ActionEvent event) {
+        Pane halaman = bukaScene.getPane("FXMLDataChart");
+        mainPane.setCenter(halaman);
+        System.out.println("You clicked me!");
+
+    }
+
     @Override
-    public void initialize(URL url, ResourceBundle rb){
-    
-       
-    
+    public void initialize(URL url, ResourceBundle rb) {
+
     }
 }

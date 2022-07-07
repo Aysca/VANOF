@@ -21,7 +21,7 @@
       </TableView>
       <TextField fx:id="tfName" layoutX="55.0" layoutY="74.0" promptText="Nama" />
       <TextField fx:id="tfNomor" layoutX="56.0" layoutY="108.0" promptText="Nomor" />
-      <TextField fx:id="tfAlamat" layoutX="215.0" layoutY="74.0" promptText="Alamat" />
+      <TextField fx:id="tfAlamat" layoutX="216.0" layoutY="74.0" promptText="Alamat" />
       <TextField fx:id="tfUsia" layoutX="216.0" layoutY="108.0" promptText="Usia Kandungan" />
       <Button layoutX="55.0" layoutY="140.0" mnemonicParsing="false" onAction="#Actionbutton" text="Tambah" />
       <Button layoutX="55.0" layoutY="485.0" mnemonicParsing="false" text="Simpan" />

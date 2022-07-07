@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package vanof;
 
 import javafx.collections.FXCollections;
@@ -36,4 +33,6 @@ public class PenggunaList {
 //    listIbuHamil.add(new IbuHamil("siti", 4, 1234));
         listIbuBalita.add(new IbuBalita("senja", "jingga", 5, 5678));
     }
-}
+
+    }
+

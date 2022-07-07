@@ -19,7 +19,8 @@ public class Masuk1Controller implements Initializable {
 
     @FXML
     private void Action(ActionEvent event) {
-        Pane halaman = bukaScene.getPane("FXMLscene2");
+//        Pane halaman = bukaScene.getPane("FXMLscene2");
+        Pane halaman = bukaScene.getPane("FXMLDocument");
         mainPane.setCenter(halaman);
         System.out.println("You clicked me!");
 

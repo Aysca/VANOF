@@ -11,42 +11,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="vanof.FXMLDataBalitaController">
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vanof.FXMLDataBalitaController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="723.0">
          <children>
-            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-            <TextField fx:id="tfnamaIbu" layoutX="103.0" layoutY="67.0" onAction="#handleButtonAction" />
-            <TextField fx:id="tfusiaBalita" layoutX="103.0" layoutY="169.0" onAction="#handleButtonAction" />
-            <Label layoutX="40.0" layoutY="71.0" prefHeight="17.0" prefWidth="45.0" text="Nama" />
-            <Label layoutX="40.0" layoutY="169.0" prefHeight="17.0" prefWidth="45.0" text="Usia" />
-            <Button layoutX="110.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleButtonAction" text="OK" />
-            <Button layoutX="195.0" layoutY="304.0" mnemonicParsing="false" text="Cancel" />
+            <TextField fx:id="tfnamaIbu" layoutX="84.0" layoutY="70.0" onAction="#handleButtonAction" promptText="Nama" />
+            <TextField fx:id="tfusiaBalita" layoutX="86.0" layoutY="164.0" onAction="#handleButtonAction" promptText="Usia" />
+            <Button layoutX="86.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleButtonAction" text="OK" />
+            <Button layoutX="141.0" layoutY="281.0" mnemonicParsing="false" text="Edit" />
             <Label layoutX="241.0" layoutY="5.0" prefHeight="65.0" prefWidth="309.0" text="Formulir Pengambilan Nomor Antrian Online">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="tfNIK" layoutX="103.0" layoutY="217.0" />
-            <Label layoutX="40.0" layoutY="221.0" text="NIK" />
-            <RadioButton fx:id="rbibuHamil" layoutX="102.0" layoutY="97.0" mnemonicParsing="false" selected="true" text="Ibu Hamil">
+            <TextField fx:id="tfNIK" layoutX="84.0" layoutY="199.0" onAction="#handleButtonAction" promptText="NIK" />
+            <RadioButton fx:id="rbibuHamil" layoutX="86.0" layoutY="103.0" mnemonicParsing="false" selected="true" text="Ibu Hamil">
                <toggleGroup>
                   <ToggleGroup fx:id="Pilihan" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="rbibuBalita" layoutX="206.0" layoutY="97.0" mnemonicParsing="false" selected="true" text="Ibu Balita" toggleGroup="$Pilihan" />
-            <ChoiceBox fx:id="cbNIK" layoutX="103.0" layoutY="260.0" prefWidth="150.0" />
-            <TableView fx:id="tvIbuBalita" layoutX="319.0" layoutY="67.0" prefHeight="193.0" prefWidth="364.0">
+            <RadioButton fx:id="rbibuBalita" layoutX="182.0" layoutY="103.0" mnemonicParsing="false" selected="true" text="Ibu Balita" toggleGroup="$Pilihan" />
+            <ChoiceBox fx:id="cbNIK" layoutX="86.0" layoutY="234.0" prefWidth="150.0" />
+            <TableView fx:id="tvIbuBalita" layoutX="313.0" layoutY="67.0" prefHeight="193.0" prefWidth="364.0">
                <columns>
-                  <TableColumn fx:id="tcNamaIbu" prefWidth="110.0" text="Nama Ibu" />
-                  <TableColumn fx:id="tcNamaBalita" prefWidth="98.66665649414062" text="Nama Balita" />
-                  <TableColumn fx:id="tcUsiaBalita" minWidth="0.0" prefWidth="67.33331298828125" text="Usia Balita" />
-                  <TableColumn fx:id="tcNIK" prefWidth="79.3333740234375" text="NIK" />
+                  <TableColumn fx:id="tcNamaIbu" prefWidth="92.6666259765625" text="Nama Ibu" />
+                  <TableColumn fx:id="tcNamaBalita" prefWidth="97.33331298828125" text="Nama Balita" />
+                  <TableColumn fx:id="tcUsiaBalita" minWidth="0.0" prefWidth="77.33328247070312" text="Usia Balita" />
+                  <TableColumn fx:id="tcNIK" prefWidth="94.66668701171875" text="NIK" />
                </columns>
             </TableView>
-            <TextField fx:id="tfnamaBalita" layoutX="103.0" layoutY="124.0" onAction="#handleButtonAction" />
-            <Label layoutX="28.0" layoutY="128.0" prefHeight="17.0" prefWidth="69.0" text="Nama Balita" />
+            <TextField fx:id="tfnamaBalita" layoutX="86.0" layoutY="128.0" onAction="#handleButtonAction" promptText="Nama Balita" />
+            <Button layoutX="197.0" layoutY="281.0" mnemonicParsing="false" text="Update" />
          </children>
       </AnchorPane>
    </children>
