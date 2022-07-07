@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cobalogin.Masuk1Controller">
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vanof.Masuk1Controller">
    <children>
       <AnchorPane prefHeight="433.0" prefWidth="263.0" style="-fx-background-color: #6798E1;">
          <children>
@@ -28,7 +28,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="423.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: #6798E1;" text="Bidan" textFill="WHITE" />
+      <Button layoutX="423.0" layoutY="162.0" mnemonicParsing="false" onAction="#Action" style="-fx-background-color: #6798E1;" text="Bidan" textFill="WHITE" />
       <Button layoutX="413.0" layoutY="201.0" mnemonicParsing="false" style="-fx-background-color: #6798E1;" text="Ibu Balita" textFill="WHITE" />
       <Button layoutX="412.0" layoutY="243.0" mnemonicParsing="false" style="-fx-background-color: #6798E1;" text="Ibu Hamil" textFill="WHITE" />
    </children>
