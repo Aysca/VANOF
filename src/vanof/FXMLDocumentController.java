@@ -40,7 +40,7 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
-    @FXML
+    @FXML   
     private void Action3(ActionEvent event) {
         Pane halaman = bukaScene.getPane("FXMLDataBalita");
         mainPane.setCenter(halaman);

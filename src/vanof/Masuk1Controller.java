@@ -18,7 +18,7 @@ public class Masuk1Controller implements Initializable {
     private BorderPane mainPane;
 
     @FXML
-    private void Action(ActionEvent event) {
+    private void bidanAction(ActionEvent event) {
 //        Pane halaman = bukaScene.getPane("FXMLscene2");
         Pane halaman = bukaScene.getPane("FXMLDocument");
         mainPane.setCenter(halaman);
